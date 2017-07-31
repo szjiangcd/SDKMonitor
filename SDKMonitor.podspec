@@ -10,8 +10,6 @@
 
 Pod::Spec.new do |s|
 
-  FORK_XCODE_WRITING=true
-
   s.name             = 'SDKMonitor'
   s.version          = '1.0.1'
   s.summary          = 'Monitor SDK.'
@@ -31,11 +29,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/szjiangcd/SDKMonitor'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'szjiangcd' => 'chuande.jiang@bqjr.cn' }
+  s.author           = { 'acct<blob>=0xE69BB9E88C82E991AB' => 'chuande.jiang@bqjr.cn' }
   s.source           = { :git => 'https://github.com/szjiangcd/SDKMonitor.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.vendored_frameworks = "SDKrameworks/cocoapods/SDKMonitor.framework"
+  s.vendored_frameworks = "SDKFrameworks/cocoapods/SDKMonitor.framework"
   s.libraries = "sqlite3"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
   
