@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
   # s.exclude_files = "Classes/Exclude"
 
   s.frameworks = "Foundation", "CoreTelephony"
-  s.ios.vendored_frameworks = 'BDC/Frameworks/cocoapods/SDKMonitor.framework'
+  s.vendored_frameworks = 'BDC/Frameworks/cocoapods/SDKMonitor.framework'
   s.libraries = "sqlite3"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
 
