@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   s.source_files = 'SDKMonitorFrameworks/SDKMonitor.framework/Headers/*.{h}'
   s.vendored_frameworks = 'SDKMonitorFrameworks/SDKMonitor.framework'
   s.public_header_files = 'SDKMonitorFrameworks/SDKMonitor.framework/Headers/SDKMonitor.h'  
-  s.libraries = "libsqlite3.0"
+  s.libraries = "sqlite3.0"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
 
   # s.public_header_files = "Classes/**/*.h"
