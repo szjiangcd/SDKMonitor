@@ -92,13 +92,15 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = 'SDKMonitor/SDKMonitor.framework/Headers/*.{h}'
-  s.frameworks = 'Foundation', 'CoreTelephony'
-  s.vendored_frameworks = 'SDKMonitor/SDKMonitor.framework'
-  s.public_header_files = 'SDKMonitor/SDKMonitor.framework/Headers/SDKMonitor.h'
-  s.libraries = 'sqlite3'
+  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
+
+  s.frameworks = "Foundation", "CoreTelephony"
+  s.vendored_frameworks = 'BDC/Frameworks/cocoapods/SDKMonitor.framework'
+  s.libraries = "sqlite3"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
 
+  # s.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
