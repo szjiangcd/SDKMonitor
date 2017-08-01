@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "BDC"
-  s.version      = "1.0.1"
+  s.name         = "SDKMonitor"
+  s.version      = "1.0.3"
   s.summary      = "Monitor SDK"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                      you can use BDC to track your user behavior in your app.
+                      you can use Monitor to track your user behavior in your app.
                    DESC
 
   s.platform     = :ios, "8.0"
@@ -95,11 +95,11 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.source_files = 'SDKMonitor/SDKMonitor.framework/Headers/*.{h}'
-  s.frameworks = 'Foundation', 'CoreTelephony'
+  s.frameworks = 'Foundation', 'CoreTelephony','AddressBook','MobileCoreServices','SystemConfiguration','CoreFoundation','EventKit','CoreLocation'
+  s.source_files = 'SDKMonitorFrameworks/SDKMonitor.framework/Headers/*.{h}'
   s.vendored_frameworks = 'SDKMonitorFrameworks/SDKMonitor.framework'
   s.public_header_files = 'SDKMonitorFrameworks/SDKMonitor.framework/Headers/SDKMonitor.h'  
-  s.libraries = "sqlite3"
+  s.libraries = "libsqlite3.0"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
 
   # s.public_header_files = "Classes/**/*.h"
