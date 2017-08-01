@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/szjiangcd/SDKMonitor.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.vendored_frameworks = "SDKFrameworks/cocoapods/SDKMonitor.framework"
+  s.vendored_frameworks = "SDKMonitor.framework"
   s.libraries = "sqlite3"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
   
