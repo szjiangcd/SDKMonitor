@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SDKMonitor"
-  s.version      = "1.1.2"
+  s.version      = "1.1.3"
   s.summary      = "Monitor SDK"
 
 
@@ -47,5 +47,6 @@ Pod::Spec.new do |s|
   s.libraries = "sqlite3.0"
   s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
 
+  s.dependency "TokenCore"
 
 end
