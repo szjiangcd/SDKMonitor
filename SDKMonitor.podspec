@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
                       you can use Monitor to track your user behavior in your app.
                    DESC
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "10.0"
   s.homepage     = "https://github.com/szjiangcd/SDKMonitor"
  
 
