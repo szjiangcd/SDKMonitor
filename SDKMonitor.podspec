@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.author             = { "szjiangcd" => "chuande.jiang@bqjr.cn" }
 
 
-  s.source       = { :git => "https://github.com/szjiangcd/SDKMonitor.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/szjiangcd/SDKMonitor.git", :tag => "#{s.version}" }
 
   s.resource_bundles = {
     'SDKLibraryBundle' => ['SDKMonitorFrameworks/SDKLibraryBundle.bundle']
